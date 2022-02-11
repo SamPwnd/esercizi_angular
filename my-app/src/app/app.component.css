@@ -1,0 +1,10 @@
+
+app-user-container, app-order-container {
+    width: 100%;
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    
+}
