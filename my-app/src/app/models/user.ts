@@ -8,7 +8,7 @@ export interface User {
     role: Role;
     username: string;
     profilePhotoUrl: string;
-    companies: Companies[];
+    companies?: Companies[];
     gender: Gender;
 }
 
@@ -25,5 +25,5 @@ export interface Companies {
     location: Address;
 }
 
-export enum Role {staff, student, manager, admin};
-export enum Gender {male, female, other};
+export enum Role {STAFF, STUDENT, MANAGER, ADMIN};
+export enum Gender {MALE, FEMALE, OTHER};

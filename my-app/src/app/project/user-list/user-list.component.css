@@ -4,3 +4,10 @@
     height: 100%;
 }
 
+img {
+    width: 100px;
+}
+
+.user-element {
+    margin: 10px;
+}

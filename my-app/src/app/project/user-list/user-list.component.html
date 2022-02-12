@@ -1,8 +1,15 @@
 <div class="container">
-    <p class="title">user-list.component</p>
-    <div class="content">
+    <ol>
+        <li class="user-element" *ngFor="let user of users">
+            <img src="{{ user.profilePhotoUrl }}" alt="Foto profilo">
+            <span><strong> {{ user.name }} {{ user.surname }} </strong></span>
+            <span> {{ user.age }} </span>
+            <span> {{ user.address.city }} </span>
+        </li>
+    </ol>
+    <!--<div class="content">
         <app-user-single></app-user-single>
         <app-user-single></app-user-single>
         <app-user-single></app-user-single>
-    </div>
+    </div>-->
 </div>

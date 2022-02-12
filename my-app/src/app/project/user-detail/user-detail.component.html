@@ -20,11 +20,8 @@
         <li><img src="{{ user.profilePhotoUrl }}" alt="profilePhotoUrl"></li>
         <li>Gender: {{ user.gender }}</li>
     </ul>
-    <ul>
-        <li><strong>Company: {{ user.companies[0].name }}</strong></li>
-        <li>Description: {{ user.companies[0].description }}</li>
-
-        <li><strong>Company: {{ user.companies[1].name }}</strong></li>
-        <li>Description: {{ user.companies[1].description }}</li>
+    <ul *ngFor="let item of user.companies">
+        <li><strong>Company: {{ item.name }}</strong></li>
+        <li>Description: {{ item.description }}</li>
     </ul>
 </div>
