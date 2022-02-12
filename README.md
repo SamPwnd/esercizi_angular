@@ -1,10 +1,3 @@
-# Angular - Exercise 1
+# Angular - Exercise 2
 
-Replicare la seguente struttura su angular
-
-Extra: Replicare anche il layout oltre la struttura
-
-*Consiglio: Per risolvere gli esercizi su Angular, creare un progetto vuoto attraverso la CLI, e creare un un branch a partire da master per ogni esercizio.*
-
-![struttura-esercizio-1](/struttura-esercizio-1.png)
-
+Creare un componente User-details, nel file .ts salvare l'oggetto user di tipo User (Typescript Esercizio 1), mostrare le proprietà di questo oggetto nel file html. *Formattare la data di nascita nel seguente formato 14 Dec 1995*
