@@ -1,6 +1,14 @@
 .container-fluid {
     background-color: #FFF2CC;
     border: 2px solid #eed68f;
-    height: 100%;
+}
+h5 {
+    margin-top: 10px;
+}
+img {
+    width: 200px;
+}
 
+ul {
+    list-style: none;
 }

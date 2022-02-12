@@ -1,3 +1,30 @@
 <div class="container-fluid">
-    <p class="title">user-detail.component</p>
+    <h5>User Detail</h5>
+    <ul>
+        <li>ID: {{ user.id }}</li>
+        <li>Name: {{ user.name }}</li>
+        <li>Surname: {{ user.surname }}</li>
+        <li>Age: {{ user.age }}</li>
+        <li>Date of birth: {{ user.dateOfBirth | date: "dd MMM yyyy" }}</li>
+    </ul>
+    <h5>Address</h5>
+    <ul>
+        <li>City: {{ user.address.city }}</li>
+        <li>Street: {{ user.address.street }}</li>
+        <li>PostalCode: {{ user.address.postalCode }}</li>
+    </ul>
+    <h5>Profile</h5>
+    <ul>
+        <li>Role: {{ user.role }} </li>
+        <li>Username: {{ user.username }}</li>
+        <li><img src="{{ user.profilePhotoUrl }}" alt="profilePhotoUrl"></li>
+        <li>Gender: {{ user.gender }}</li>
+    </ul>
+    <ul>
+        <li><strong>Company: {{ user.companies[0].name }}</strong></li>
+        <li>Description: {{ user.companies[0].description }}</li>
+
+        <li><strong>Company: {{ user.companies[1].name }}</strong></li>
+        <li>Description: {{ user.companies[1].description }}</li>
+    </ul>
 </div>
