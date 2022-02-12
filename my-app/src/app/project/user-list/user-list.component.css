@@ -1,8 +1,6 @@
 .container {
     background-color: #D5E8D4;
     border: 2px solid #C2DCBB;
+    height: 100%;
 }
 
-app-user-single {
-    width: 100%;
-}

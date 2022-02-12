@@ -1,4 +1,6 @@
-.container {
+.container-fluid {
     background-color: #FFF2CC;
     border: 2px solid #eed68f;
+    height: 100%;
+
 }

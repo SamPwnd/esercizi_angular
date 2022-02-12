@@ -10,6 +10,7 @@ import { OrderContainerComponent } from './project/order-container/order-contain
 import { OrderListComponent } from './project/order-list/order-list.component';
 import { OrderSingleComponent } from './project/order-single/order-single.component';
 import { OrderDetailComponent } from './project/order-detail/order-detail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OrderDetailComponent } from './project/order-detail/order-detail.compon
     OrderDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

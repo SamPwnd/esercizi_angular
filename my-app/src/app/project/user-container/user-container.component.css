@@ -1,13 +1,7 @@
-.container {
+.container-fluid {
     background-color: #DAE8FC;
     border: 2px solid #c2dbff;
+    height: 100%;
 }
 
-.content {
-    display: flex;
-}
 
-app-user-list, app-user-detail {
-    width: 100%;
-    margin: 10px;
-}
