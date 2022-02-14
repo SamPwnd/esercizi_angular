@@ -1,6 +1,7 @@
 <div class="container">
     <img src="{{ user.profilePhotoUrl }}" alt="Foto profilo">
-    <span><strong> {{ user.name }} {{ user.surname }} </strong></span>
-    <span> {{ user.age }} </span>
-    <span> {{ user.address.city }} </span>
+    <p><strong> {{ user.name }} {{ user.surname }} </strong></p>
+    <p> {{ user.age }} </p>
+    <p> {{ user.address.city }} </p>
+    <button (click)="clickedButton(user)">Delete</button>
 </div>
