@@ -1,4 +1,11 @@
-<div class="container">
+<!-- Non capisco perchè non viene presa la classe border-4 -->
+<div class="container border border-4"
+[ngClass]="{
+    'border-secondary': user.role === 'Staff',
+    'border-info': user.role === 'Manager',
+    'border-dark': user.role === 'Student',
+    'border-warning': user.role === 'Admin'
+}"> 
     <img src="{{ user.profilePhotoUrl }}" alt="Foto profilo">
     <p><strong> {{ user.name }} {{ user.surname }} </strong></p>
     <p> {{ user.age }} </p>

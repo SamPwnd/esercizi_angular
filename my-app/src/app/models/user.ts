@@ -25,5 +25,14 @@ export interface Companies {
     location: Address;
 }
 
-export enum Role {STAFF, STUDENT, MANAGER, ADMIN};
-export enum Gender {MALE, FEMALE, OTHER};
+export enum Role {
+    STAFF = 'Staff',
+    STUDENT = 'Student', 
+    MANAGER = 'Manager', 
+    ADMIN = 'Admin'
+};
+export enum Gender {
+    MALE = 'Male', 
+    FEMALE = 'Female', 
+    OTHER = 'Other'
+};
