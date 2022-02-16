@@ -59,7 +59,9 @@ export class UserListComponent implements OnInit {
       }
   ];
 
-  constructor() { }
+  constructor() {
+    setTimeout(()=> this.users = [], 4000);
+   }
 
   ngOnInit(): void {
   }

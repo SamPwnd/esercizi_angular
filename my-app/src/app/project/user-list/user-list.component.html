@@ -1,5 +1,5 @@
 <div class="container">
-    <ol>
+    <ol *ngIf="users.length > 0; else noUsers">
         <div class="user-element" *ngFor="let selectedUser of users">
             <li>
                 <app-user-single [user]="selectedUser" (deleteButton)="deleteUser(selectedUser)"></app-user-single>
@@ -7,3 +7,7 @@
         </div>
     </ol>
 </div>
+
+<ng-template #noUsers>
+    <p class="noUserText"><strong> Non sono presenti utenti </strong></p>
+</ng-template>
