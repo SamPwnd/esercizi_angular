@@ -11,6 +11,8 @@ import { OrderListComponent } from './project/order-list/order-list.component';
 import { OrderSingleComponent } from './project/order-single/order-single.component';
 import { OrderDetailComponent } from './project/order-detail/order-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     OrderContainerComponent,
     OrderListComponent,
     OrderSingleComponent,
-    OrderDetailComponent
+    OrderDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
