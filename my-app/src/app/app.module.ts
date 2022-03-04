@@ -13,6 +13,7 @@ import { OrderDetailComponent } from './project/order-detail/order-detail.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     OrderListComponent,
     OrderSingleComponent,
     OrderDetailComponent,
-    NavbarComponent
+    NavbarComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
