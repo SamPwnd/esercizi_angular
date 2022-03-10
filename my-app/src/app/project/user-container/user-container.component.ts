@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/User';
 
 @Component({
   selector: 'app-user-container',
@@ -12,4 +13,13 @@ export class UserContainerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  userDetail: User[] = [];
+  storeUserDetail(detail: any){
+    this.userDetail = detail;
+  }
+
+  closeDetails(){
+    this.userDetail = [];
+    console.log(this.userDetail);
+  }
 }

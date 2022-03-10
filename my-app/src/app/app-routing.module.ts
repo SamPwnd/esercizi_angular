@@ -9,7 +9,6 @@ const routes: Routes = [
     {path: "orders", component: OrderContainerComponent},
     {path: "", component: UserContainerComponent},
     {path: "**", component: PagenotfoundComponent, pathMatch: 'full'},
-
 ];
 
 @NgModule({

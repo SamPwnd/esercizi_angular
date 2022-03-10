@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { User, Role, Gender } from 'src/app/models/User';
 
 @Component({
@@ -7,6 +7,8 @@ import { User, Role, Gender } from 'src/app/models/User';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+
+  @Output() userEventToContainer = new EventEmitter<any>();
 
   users: User[] = [
     {
@@ -64,10 +66,19 @@ export class UserListComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    
   }
 
   deleteUser(x: User){
     let index = this.users.indexOf(x);
     this.users.splice(index,1);
   }
+
+  userDetails: User[] = [];
+  receiveDetails(details: User){
+    this.userDetails = JSON.parse(JSON.stringify(details));
+    this.userEventToContainer.emit(this.userDetails);
+    console.log(this.userDetails);
+  }
+
 }

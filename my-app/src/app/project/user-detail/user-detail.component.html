@@ -1,26 +1,29 @@
 <div class="container-fluid">
-    <h5>User Detail</h5>
+    <button type="button" class="close" aria-label="Close" (click)="closeDetailComponent()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h5>user Detail</h5>
     <ul>
-        <li>ID: {{ user.id }}</li>
-        <li>Name: {{ user.name }}</li>
-        <li>Surname: {{ user.surname }}</li>
-        <li>Age: {{ user.age }}</li>
-        <li>Date of birth: {{ user.dateOfBirth | date: "dd MMM yyyy" }}</li>
+        <li>ID: {{ userDetail.id }}</li>
+        <li>Name: {{ userDetail.name }}</li>
+        <li>Surname: {{ userDetail.surname }}</li>
+        <li>Age: {{ userDetail.age }}</li>
+        <li>Date of birth: {{ userDetail.dateOfBirth | date: "dd MMM yyyy" }}</li>
     </ul>
     <h5>Address</h5>
     <ul>
-        <li>City: {{ user.address.city }}</li>
-        <li>Street: {{ user.address.street }}</li>
-        <li>PostalCode: {{ user.address.postalCode }}</li>
+        <li>City: {{ userDetail.address.city }}</li>
+        <li>Street: {{ userDetail.address.street }}</li>
+        <li>PostalCode: {{ userDetail.address.postalCode }}</li>
     </ul>
     <h5>Profile</h5>
     <ul>
-        <li>Role: {{ user.role }} </li>
-        <li>Username: {{ user.username }}</li>
-        <li><img src="{{ user.profilePhotoUrl }}" alt="profilePhotoUrl"></li>
-        <li>Gender: {{ user.gender }}</li>
+        <li>Role: {{ userDetail.role }} </li>
+        <li>username: {{ userDetail.username }}</li>
+        <li><img src="{{ userDetail.profilePhotoUrl }}" alt="profilePhotoUrl"></li>
+        <li>Gender: {{ userDetail.gender }}</li>
     </ul>
-    <ul *ngFor="let item of user.companies">
+    <ul *ngFor="let item of userDetail.companies">
         <li><strong>Company: {{ item.name }}</strong></li>
         <li>Description: {{ item.description }}</li>
     </ul>

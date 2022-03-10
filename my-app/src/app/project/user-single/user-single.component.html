@@ -10,5 +10,6 @@
     <p><strong> {{ user.name }} {{ user.surname }} </strong></p>
     <p> {{ user.age }} </p>
     <p> {{ user.address.city }} </p>
-    <button (click)="clickedButton(user)">Delete</button>
+    <button (click)="clickedButton(user)" class="btn btn-danger">Delete</button>
+    <button (click)="sendUserDetails(user)" class="btn btn-info">Visualizza</button>
 </div>

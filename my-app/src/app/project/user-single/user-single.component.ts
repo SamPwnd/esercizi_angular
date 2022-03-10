@@ -10,6 +10,7 @@ export class UserSingleComponent implements OnInit {
 
   @Input() user!: User;
   @Output() deleteButton = new EventEmitter<User>();
+  @Output() userEventToList = new EventEmitter<User>();
 
   constructor() { }
 
@@ -17,7 +18,11 @@ export class UserSingleComponent implements OnInit {
   }
 
   clickedButton(user: User) {
-    this.deleteButton.emit(user)
+    this.deleteButton.emit(user);
+  }
+
+  sendUserDetails(user: User) {
+    this.userEventToList.emit(user);
   }
   
 }
